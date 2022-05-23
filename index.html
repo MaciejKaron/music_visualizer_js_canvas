@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🎧Js canvas sounds🎧</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <canvas id="canvas1"></canvas>
+      <div id="controllers">
+        <audio id="audio1" controls></audio>
+        <audio id="audio"></audio>
+        <input type="file" id="fileUpload" accept="audio/*" />
+      </div>
+      <div id="logo">
+        <img id="starter" src="pictures/dj-cat.gif" />
+      </div>
+    </div>
+
+    <div id="menu" style="text-align: center">
+      <h3 id="menu_txt">Select your option</h3>
+      <select id="select" onChange="update()">
+        <option disabled hidden>Select</option>
+        <option value="opcja 1">opcja 1</option>
+        <option value="opcja 2">opcja 2</option>
+        <option value="opcja 3">opcja 3</option>
+        <option value="opcja 4">opcja 4</option>
+      </select>
+      <h2 id="menu_result">🔥Aktualnie🔥</h2>
+      <input type="checkbox" id="check" name="microphone" />
+      <label for="check" id="check_label">Microphone</label>
+    </div>
+    <script src="./scripts/main.js"></script>
+  </body>
+</html>
